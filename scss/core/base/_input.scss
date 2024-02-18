@@ -1,0 +1,10 @@
+/* 
+    Set default global styles for inputs elements:
+    e.g. select, input[type="text"], input[type="email"], input[type="number"]
+*/
+
+input {
+    @extend %standardize-form-elements;
+    @extend %no-focus-outline;
+  }
+  

@@ -1,0 +1,21 @@
+.pill {
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: fit-content;
+  
+    &--bluewood {
+      background-color: getColor(Bluewood);
+      color: getColor(White);
+    }
+  
+    &--light {
+      background-color: getColor(Porcelain-200);
+      color: getColor(Bluewood);
+    }
+  
+    p {
+      margin: 0 !important;
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,22 @@
+.elementor {
+    .elementor-widget-cxg_text_editor {
+      p {
+        margin: 1em 0;
+      }
+  
+      ul,
+      ol {
+        margin: 1em 0;
+        margin-left: 1em;
+        // outline: 1px solid yellow;
+  
+        li {
+          margin: 1em 0;
+          margin-left: 1em;
+          list-style: initial;
+          // outline: 1px solid red;
+        }
+      }
+    }
+  }
+  

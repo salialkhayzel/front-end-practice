@@ -1,0 +1,146 @@
+/* 
+    Set default global style for table element:
+    e.g. <table></table>, .table
+*/
+
+table {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: unset;
+    border-spacing: 0;
+  
+    td {
+      font-size: 12px;
+      padding: 12px;
+      border: 1px solid getColor(Porcelain);
+  
+      &:not(:last-child) {
+        border-right: none;
+      }
+    }
+  
+    tr {
+      &:not(:last-child) {
+        td {
+          border-bottom: none;
+        }
+      }
+  
+      &.highlight {
+        td {
+          text-align: center;
+          background-color: getColor(Porcelain-100);
+          font-weight: bold;
+        }
+      }
+    }
+  
+    tr {
+      &:first-child {
+        td {
+          &:first-child {
+            border-top-left-radius: 5px;
+          }
+  
+          &:last-child {
+            border-top-right-radius: 5px;
+          }
+        }
+      }
+  
+      &:last-child {
+        td {
+          &:first-child {
+            border-bottom-left-radius: 5px;
+          }
+  
+          &:last-child {
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+  .table {
+    &.table-style-1 {
+      tr {
+        td {
+          &.highlight {
+            font-weight: bold;
+          }
+  
+          p {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+  
+            a {
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+  
+      &.column {
+        tr {
+          td {
+            p {
+              flex-direction: column;
+  
+              :not(:last-child) {
+                margin-bottom: 4px;
+              }
+            }
+          }
+        }
+      }
+  
+      &.justify-content {
+        &-center {
+          tr {
+            td {
+              p {
+                justify-content: center;
+              }
+            }
+          }
+        }
+        &-end {
+          tr {
+            td {
+              p {
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .table-heading-img {
+    text-align: center;
+  
+    .icon-wrapper {
+      background-color: getColor(Porcelain);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 12px;
+      margin-bottom: 6px;
+  
+      img {
+        min-width: 32px;
+      }
+    }
+  
+    // @include md {
+    //   .icon-wrapper {
+    //     margin: 6px;
+    //     margin-bottom: 4px;
+    //   }
+    // }
+  }
+  

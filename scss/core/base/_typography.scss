@@ -1,0 +1,100 @@
+/* General Typography Rules */
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: getColor(Bluewood);
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  color: getColor(Aqua);
+
+  &:hover {
+    color: getColor(Aqua-400);
+    text-decoration: underline;
+  }
+
+  &.more-cta {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
+  &.light {
+    font-weight: 100;
+  }
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.heading-group {
+  margin-bottom: 16px;
+
+  b,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    display: block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: getColor(Porcelain-400);
+    }
+  }
+}
