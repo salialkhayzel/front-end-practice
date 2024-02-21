@@ -289,6 +289,10 @@ main {
   background-color: getColor(White);
 }
 
+/* 
+    Set default global styles for: 
+    Navigation <nav></nav>
+*/
 .pill {
   border-radius: 4px;
   padding: 4px 8px;
